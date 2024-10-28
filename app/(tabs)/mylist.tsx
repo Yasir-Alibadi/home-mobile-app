@@ -1,9 +1,10 @@
-import { Text, View, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
+import Auth from "../../components/Auth"; // Import the reusable component
 
 export default function MyListScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>My list screen</Text>
+      <Auth />
     </View>
   );
 }
@@ -11,11 +12,8 @@ export default function MyListScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor: "#25292e",
     justifyContent: "center",
     alignItems: "center",
-  },
-  text: {
-    // color: "#fff",
+    backgroundColor: "#F8F8F8",
   },
 });
